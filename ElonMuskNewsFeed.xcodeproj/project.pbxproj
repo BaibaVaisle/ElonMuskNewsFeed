@@ -3,29 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		BEF9C1A826D99519008E2335 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1A726D99519008E2335 /* AppDelegate.swift */; };
 		BEF9C1AA26D99519008E2335 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1A926D99519008E2335 /* SceneDelegate.swift */; };
-		BEF9C1AC26D99519008E2335 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1AB26D99519008E2335 /* ViewController.swift */; };
+		BEF9C1AC26D99519008E2335 /* EmNewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1AB26D99519008E2335 /* EmNewsFeedViewController.swift */; };
 		BEF9C1AF26D99519008E2335 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF9C1AD26D99519008E2335 /* Main.storyboard */; };
 		BEF9C1B226D9951A008E2335 /* ElonMuskNewsFeed.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1B026D9951A008E2335 /* ElonMuskNewsFeed.xcdatamodeld */; };
 		BEF9C1B426D9951D008E2335 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEF9C1B326D9951D008E2335 /* Assets.xcassets */; };
 		BEF9C1B726D9951D008E2335 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF9C1B526D9951D008E2335 /* LaunchScreen.storyboard */; };
+		BEF9C1C626D995DC008E2335 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1C526D995DC008E2335 /* Alert.swift */; };
+		BEF9C1C926D99678008E2335 /* Gloss in Frameworks */ = {isa = PBXBuildFile; productRef = BEF9C1C826D99678008E2335 /* Gloss */; };
+		BEF9C1CB26D9969D008E2335 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1CA26D9969D008E2335 /* Item.swift */; };
+		BEF9C1CF26D9A590008E2335 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1CE26D9A590008E2335 /* NewsTableViewCell.swift */; };
+		BEF9C1D126D9A61E008E2335 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1D026D9A61E008E2335 /* DetailViewController.swift */; };
+		BEF9C1D326D9A8F2008E2335 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1D226D9A8F2008E2335 /* WebViewController.swift */; };
+		BEF9C1D526D9A993008E2335 /* SavedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1D426D9A993008E2335 /* SavedNewsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BEF9C1A426D99519008E2335 /* ElonMuskNewsFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ElonMuskNewsFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF9C1A726D99519008E2335 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEF9C1A926D99519008E2335 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BEF9C1AB26D99519008E2335 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEF9C1AB26D99519008E2335 /* EmNewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmNewsFeedViewController.swift; sourceTree = "<group>"; };
 		BEF9C1AE26D99519008E2335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEF9C1B126D9951A008E2335 /* ElonMuskNewsFeed.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ElonMuskNewsFeed.xcdatamodel; sourceTree = "<group>"; };
 		BEF9C1B326D9951D008E2335 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEF9C1B626D9951D008E2335 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BEF9C1B826D9951D008E2335 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF9C1C526D995DC008E2335 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		BEF9C1CA26D9969D008E2335 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		BEF9C1CE26D9A590008E2335 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		BEF9C1D026D9A61E008E2335 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		BEF9C1D226D9A8F2008E2335 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BEF9C1D426D9A993008E2335 /* SavedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF9C1C926D99678008E2335 /* Gloss in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,16 +72,62 @@
 		BEF9C1A626D99519008E2335 /* ElonMuskNewsFeed */ = {
 			isa = PBXGroup;
 			children = (
-				BEF9C1A726D99519008E2335 /* AppDelegate.swift */,
-				BEF9C1A926D99519008E2335 /* SceneDelegate.swift */,
-				BEF9C1AB26D99519008E2335 /* ViewController.swift */,
-				BEF9C1AD26D99519008E2335 /* Main.storyboard */,
+				BEF9C1C226D99572008E2335 /* Extension */,
+				BEF9C1BE26D99535008E2335 /* AppDelegate */,
+				BEF9C1C126D99562008E2335 /* Model */,
+				BEF9C1C026D99551008E2335 /* View */,
+				BEF9C1BF26D99541008E2335 /* Controller */,
 				BEF9C1B326D9951D008E2335 /* Assets.xcassets */,
-				BEF9C1B526D9951D008E2335 /* LaunchScreen.storyboard */,
 				BEF9C1B826D9951D008E2335 /* Info.plist */,
 				BEF9C1B026D9951A008E2335 /* ElonMuskNewsFeed.xcdatamodeld */,
 			);
 			path = ElonMuskNewsFeed;
+			sourceTree = "<group>";
+		};
+		BEF9C1BE26D99535008E2335 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9C1A726D99519008E2335 /* AppDelegate.swift */,
+				BEF9C1A926D99519008E2335 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BEF9C1BF26D99541008E2335 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9C1AB26D99519008E2335 /* EmNewsFeedViewController.swift */,
+				BEF9C1CE26D9A590008E2335 /* NewsTableViewCell.swift */,
+				BEF9C1D026D9A61E008E2335 /* DetailViewController.swift */,
+				BEF9C1D226D9A8F2008E2335 /* WebViewController.swift */,
+				BEF9C1D426D9A993008E2335 /* SavedNewsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BEF9C1C026D99551008E2335 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9C1AD26D99519008E2335 /* Main.storyboard */,
+				BEF9C1B526D9951D008E2335 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BEF9C1C126D99562008E2335 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9C1CA26D9969D008E2335 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BEF9C1C226D99572008E2335 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9C1C526D995DC008E2335 /* Alert.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +146,9 @@
 			dependencies = (
 			);
 			name = ElonMuskNewsFeed;
+			packageProductDependencies = (
+				BEF9C1C826D99678008E2335 /* Gloss */,
+			);
 			productName = ElonMuskNewsFeed;
 			productReference = BEF9C1A426D99519008E2335 /* ElonMuskNewsFeed.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +176,9 @@
 				Base,
 			);
 			mainGroup = BEF9C19B26D99519008E2335;
+			packageReferences = (
+				BEF9C1C726D99678008E2335 /* XCRemoteSwiftPackageReference "Gloss" */,
+			);
 			productRefGroup = BEF9C1A526D99519008E2335 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,9 +207,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEF9C1B226D9951A008E2335 /* ElonMuskNewsFeed.xcdatamodeld in Sources */,
-				BEF9C1AC26D99519008E2335 /* ViewController.swift in Sources */,
+				BEF9C1D326D9A8F2008E2335 /* WebViewController.swift in Sources */,
+				BEF9C1CF26D9A590008E2335 /* NewsTableViewCell.swift in Sources */,
+				BEF9C1AC26D99519008E2335 /* EmNewsFeedViewController.swift in Sources */,
 				BEF9C1A826D99519008E2335 /* AppDelegate.swift in Sources */,
+				BEF9C1C626D995DC008E2335 /* Alert.swift in Sources */,
+				BEF9C1CB26D9969D008E2335 /* Item.swift in Sources */,
 				BEF9C1AA26D99519008E2335 /* SceneDelegate.swift in Sources */,
+				BEF9C1D126D9A61E008E2335 /* DetailViewController.swift in Sources */,
+				BEF9C1D526D9A993008E2335 /* SavedNewsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +417,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BEF9C1C726D99678008E2335 /* XCRemoteSwiftPackageReference "Gloss" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hkellaway/Gloss.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEF9C1C826D99678008E2335 /* Gloss */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BEF9C1C726D99678008E2335 /* XCRemoteSwiftPackageReference "Gloss" */;
+			productName = Gloss;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BEF9C1B026D9951A008E2335 /* ElonMuskNewsFeed.xcdatamodeld */ = {
