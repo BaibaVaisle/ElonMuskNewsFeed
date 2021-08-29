@@ -46,7 +46,7 @@ class EmNewsFeedViewController: UIViewController {
     
     func handleGetData(){
             self.activityIndicator(animated: true)
-            let jsonUrl = "https://newsapi.org/v2/everything?q=Elon Musk&from=2021-08-01&to=2021-08-30&sortBy=popularity&apiKey=5e39034a500c4ca8b3549c11f7fba665"
+            let jsonUrl = "https://newsapi.org/v2/everything?q=ElonMusk&from=2021-08-01&to=2021-08-30&sortBy=popularity&apiKey=5e39034a500c4ca8b3549c11f7fba665"
             
             guard let url = URL(string: jsonUrl) else {return}
             
@@ -97,3 +97,59 @@ class EmNewsFeedViewController: UIViewController {
 
 }
 
+//MARK: -UITableViewDelegate, UITableViewDataSource
+extension EmNewsFeedViewController: UITableViewDelegate, UITableViewDataSource{
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    
+    
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "newsFeed", for: indexPath) as? NewsTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        let item = items[indexPath.row]
+        cell.newsTitleLabel.text = item.title
+        cell.newsTitleLabel.numberOfLines = 0
+        
+        if let image = item.image{
+            cell.newsImageView.image = image
+        }
+        let date = String(item.publishedAt.prefix(10))
+        self.title = "Apple News \(date)"
+        
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storybord = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let vc = storybord.instantiateViewController(identifier: "DetailViewController") as? DetailViewController else {
+            return
+        }
+        
+        let item = items[indexPath.row]
+        vc.contentString = item.description
+        vc.titleString = item.title
+        vc.webURLString = item.url
+        vc.newsImage = item.image
+        
+//        present(vc, animated: true, completion: nil)
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
+    
+}
