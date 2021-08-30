@@ -29,6 +29,7 @@ class EmNewsFeedViewController: UIViewController {
                 if animated{
                     self.activityIndicatorView.isHidden = false
                     self.activityIndicatorView.startAnimating()
+                    
                 }else{
                     self.activityIndicatorView.isHidden = true
                     self.activityIndicatorView.stopAnimating()
