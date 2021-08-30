@@ -21,7 +21,7 @@ class EmNewsFeedViewController: UIViewController {
         super.viewDidLoad()
         self.title = "News"
         activityIndicatorView.isHidden = true
-               handleGetData()
+              // handleGetData()
     }
     
     func activityIndicator(animated: Bool){
@@ -122,7 +122,7 @@ extension EmNewsFeedViewController: UITableViewDelegate, UITableViewDataSource{
             cell.newsImageView.image = image
         }
         let date = String(item.publishedAt.prefix(10))
-        self.title = "Apple News \(date)"
+        self.title = "News \(date)"
         
         return cell
         

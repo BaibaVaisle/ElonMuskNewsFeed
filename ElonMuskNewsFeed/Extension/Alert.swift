@@ -12,9 +12,13 @@ extension UIViewController {
         
         DispatchQueue.main.async {
             let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alert.view.tintColor = UIColor.black
+            alert.view.backgroundColor = UIColor.orange
+            alert.view.layer.cornerRadius = 40
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             
             self.present(alert, animated: true, completion: nil)
+            
         }
         
     }

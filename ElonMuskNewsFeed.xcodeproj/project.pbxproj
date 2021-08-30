@@ -20,7 +20,11 @@
 		BEF9C1CF26D9A590008E2335 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1CE26D9A590008E2335 /* NewsTableViewCell.swift */; };
 		BEF9C1D126D9A61E008E2335 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1D026D9A61E008E2335 /* DetailViewController.swift */; };
 		BEF9C1D326D9A8F2008E2335 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1D226D9A8F2008E2335 /* WebViewController.swift */; };
-		BEF9C1D526D9A993008E2335 /* SavedNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1D426D9A993008E2335 /* SavedNewsViewController.swift */; };
+		BEF9C1D526D9A993008E2335 /* SavedNewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1D426D9A993008E2335 /* SavedNewsTableViewController.swift */; };
+		BEF9C1D826DBE156008E2335 /* HinaMincho-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEF9C1D726DBE156008E2335 /* HinaMincho-Regular.ttf */; };
+		BEF9C1DC26DC27CB008E2335 /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEF9C1DB26DC27CB008E2335 /* AbrilFatface-Regular.ttf */; };
+		BEF9C1DE26DC27DF008E2335 /* Unna-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEF9C1DD26DC27DF008E2335 /* Unna-Bold.ttf */; };
+		BEF9C1E026DC27E6008E2335 /* Unna-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEF9C1DF26DC27E6008E2335 /* Unna-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +42,11 @@
 		BEF9C1CE26D9A590008E2335 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		BEF9C1D026D9A61E008E2335 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		BEF9C1D226D9A8F2008E2335 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
-		BEF9C1D426D9A993008E2335 /* SavedNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsViewController.swift; sourceTree = "<group>"; };
+		BEF9C1D426D9A993008E2335 /* SavedNewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedNewsTableViewController.swift; sourceTree = "<group>"; };
+		BEF9C1D726DBE156008E2335 /* HinaMincho-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HinaMincho-Regular.ttf"; sourceTree = "<group>"; };
+		BEF9C1DB26DC27CB008E2335 /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
+		BEF9C1DD26DC27DF008E2335 /* Unna-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unna-Bold.ttf"; sourceTree = "<group>"; };
+		BEF9C1DF26DC27E6008E2335 /* Unna-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unna-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +80,7 @@
 		BEF9C1A626D99519008E2335 /* ElonMuskNewsFeed */ = {
 			isa = PBXGroup;
 			children = (
+				BEF9C1D626DBE107008E2335 /* ExtraResourse */,
 				BEF9C1C226D99572008E2335 /* Extension */,
 				BEF9C1BE26D99535008E2335 /* AppDelegate */,
 				BEF9C1C126D99562008E2335 /* Model */,
@@ -100,7 +109,7 @@
 				BEF9C1CE26D9A590008E2335 /* NewsTableViewCell.swift */,
 				BEF9C1D026D9A61E008E2335 /* DetailViewController.swift */,
 				BEF9C1D226D9A8F2008E2335 /* WebViewController.swift */,
-				BEF9C1D426D9A993008E2335 /* SavedNewsViewController.swift */,
+				BEF9C1D426D9A993008E2335 /* SavedNewsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -128,6 +137,17 @@
 				BEF9C1C526D995DC008E2335 /* Alert.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		BEF9C1D626DBE107008E2335 /* ExtraResourse */ = {
+			isa = PBXGroup;
+			children = (
+				BEF9C1D726DBE156008E2335 /* HinaMincho-Regular.ttf */,
+				BEF9C1DB26DC27CB008E2335 /* AbrilFatface-Regular.ttf */,
+				BEF9C1DD26DC27DF008E2335 /* Unna-Bold.ttf */,
+				BEF9C1DF26DC27E6008E2335 /* Unna-Regular.ttf */,
+			);
+			path = ExtraResourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +216,10 @@
 				BEF9C1B726D9951D008E2335 /* LaunchScreen.storyboard in Resources */,
 				BEF9C1B426D9951D008E2335 /* Assets.xcassets in Resources */,
 				BEF9C1AF26D99519008E2335 /* Main.storyboard in Resources */,
+				BEF9C1DC26DC27CB008E2335 /* AbrilFatface-Regular.ttf in Resources */,
+				BEF9C1E026DC27E6008E2335 /* Unna-Regular.ttf in Resources */,
+				BEF9C1D826DBE156008E2335 /* HinaMincho-Regular.ttf in Resources */,
+				BEF9C1DE26DC27DF008E2335 /* Unna-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +239,7 @@
 				BEF9C1CB26D9969D008E2335 /* Item.swift in Sources */,
 				BEF9C1AA26D99519008E2335 /* SceneDelegate.swift in Sources */,
 				BEF9C1D126D9A61E008E2335 /* DetailViewController.swift in Sources */,
-				BEF9C1D526D9A993008E2335 /* SavedNewsViewController.swift in Sources */,
+				BEF9C1D526D9A993008E2335 /* SavedNewsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
