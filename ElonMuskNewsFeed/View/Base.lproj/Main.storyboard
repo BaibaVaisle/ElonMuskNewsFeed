@@ -360,7 +360,7 @@
         <!--Web View Controller-->
         <scene sceneID="tMc-AX-FS7">
             <objects>
-                <viewController storyboardIdentifier="WebViewController" id="ArA-gL-kTS" customClass="WebViewController" customModule="ElonMuskNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ArA-gL-kTS" customClass="WebViewController" customModule="ElonMuskNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UaD-QL-Nrg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
