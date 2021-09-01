@@ -16,7 +16,12 @@ class EmNewsFeedViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var activityIndicatorView: UIActivityIndicatorView!
     
+    @IBOutlet weak var moonBarButtonItem: UIBarButtonItem!
+    var isOn = false
     
+    
+    @IBAction func moonBarButtonItemTapped(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "News"
@@ -41,7 +46,7 @@ class EmNewsFeedViewController: UIViewController {
         basicAlert(title: "News Feed Info!", message: "Press plane to fetch Elon Musk News Feed articles.")
     }
     @IBAction func getDataTapped(_ sender: Any) {
-        self.activityIndicator(animated: true)
+        //self.activityIndicator(animated: true)
         handleGetData()
     }
     
@@ -118,7 +123,7 @@ extension EmNewsFeedViewController: UITableViewDelegate, UITableViewDataSource{
         let item = items[indexPath.row]
         cell.newsTitleLabel.text = item.title
         cell.newsTitleLabel.numberOfLines = 0
-        
+        #warning("separator line - to put darker")
         if let image = item.image{
             cell.newsImageView.image = image
         }
@@ -128,9 +133,9 @@ extension EmNewsFeedViewController: UITableViewDelegate, UITableViewDataSource{
         return cell
         
     }
-    
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 170
     }
     
     

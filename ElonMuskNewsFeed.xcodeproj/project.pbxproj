@@ -25,6 +25,9 @@
 		BEF9C1DC26DC27CB008E2335 /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEF9C1DB26DC27CB008E2335 /* AbrilFatface-Regular.ttf */; };
 		BEF9C1DE26DC27DF008E2335 /* Unna-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEF9C1DD26DC27DF008E2335 /* Unna-Bold.ttf */; };
 		BEF9C1E026DC27E6008E2335 /* Unna-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEF9C1DF26DC27E6008E2335 /* Unna-Regular.ttf */; };
+		BEF9C1E226E0317C008E2335 /* ModeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1E126E0317C008E2335 /* ModeViewController.swift */; };
+		BEF9C1E526E0414F008E2335 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1E426E0414E008E2335 /* Extension.swift */; };
+		BEF9C1E726E04799008E2335 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF9C1E626E04799008E2335 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,9 @@
 		BEF9C1DB26DC27CB008E2335 /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
 		BEF9C1DD26DC27DF008E2335 /* Unna-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unna-Bold.ttf"; sourceTree = "<group>"; };
 		BEF9C1DF26DC27E6008E2335 /* Unna-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Unna-Regular.ttf"; sourceTree = "<group>"; };
+		BEF9C1E126E0317C008E2335 /* ModeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeViewController.swift; sourceTree = "<group>"; };
+		BEF9C1E426E0414E008E2335 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		BEF9C1E626E04799008E2335 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +116,8 @@
 				BEF9C1D026D9A61E008E2335 /* DetailViewController.swift */,
 				BEF9C1D226D9A8F2008E2335 /* WebViewController.swift */,
 				BEF9C1D426D9A993008E2335 /* SavedNewsTableViewController.swift */,
+				BEF9C1E126E0317C008E2335 /* ModeViewController.swift */,
+				BEF9C1E626E04799008E2335 /* InfoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -135,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				BEF9C1C526D995DC008E2335 /* Alert.swift */,
+				BEF9C1E426E0414E008E2335 /* Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -232,11 +241,14 @@
 			files = (
 				BEF9C1B226D9951A008E2335 /* ElonMuskNewsFeed.xcdatamodeld in Sources */,
 				BEF9C1D326D9A8F2008E2335 /* WebViewController.swift in Sources */,
+				BEF9C1E226E0317C008E2335 /* ModeViewController.swift in Sources */,
 				BEF9C1CF26D9A590008E2335 /* NewsTableViewCell.swift in Sources */,
 				BEF9C1AC26D99519008E2335 /* EmNewsFeedViewController.swift in Sources */,
 				BEF9C1A826D99519008E2335 /* AppDelegate.swift in Sources */,
+				BEF9C1E526E0414F008E2335 /* Extension.swift in Sources */,
 				BEF9C1C626D995DC008E2335 /* Alert.swift in Sources */,
 				BEF9C1CB26D9969D008E2335 /* Item.swift in Sources */,
+				BEF9C1E726E04799008E2335 /* InfoViewController.swift in Sources */,
 				BEF9C1AA26D99519008E2335 /* SceneDelegate.swift in Sources */,
 				BEF9C1D126D9A61E008E2335 /* DetailViewController.swift in Sources */,
 				BEF9C1D526D9A993008E2335 /* SavedNewsTableViewController.swift in Sources */,

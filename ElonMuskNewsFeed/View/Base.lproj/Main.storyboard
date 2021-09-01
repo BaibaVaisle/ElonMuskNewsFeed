@@ -20,6 +20,81 @@
         </array>
     </customFonts>
     <scenes>
+        <!--Mode View Controller-->
+        <scene sceneID="Pfw-Ab-d58">
+            <objects>
+                <viewController id="dRM-dd-tjj" customClass="ModeViewController" customModule="ElonMuskNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rlb-DL-uao">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="34d-iB-ZSg">
+                                <rect key="frame" x="304" y="50" width="41" height="48"/>
+                                <color key="backgroundColor" red="0.52645827779999999" green="0.31095575209999998" blue="0.29279771970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="GlW-PZ-xCc"/>
+                                    <constraint firstAttribute="width" constant="41" id="P9T-iJ-eVl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HinaMincho-Regular" family="Hina Mincho" pointSize="25"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.98854296139999998" green="0.49283598410000001" blue="0.3191011997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.98854296139999998" green="0.49283598410000001" blue="0.3191011997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeButtonTapped:" destination="dRM-dd-tjj" eventType="touchUpInside" id="hE8-by-GG4"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="mDY-h0-fuz">
+                                <rect key="frame" x="74" y="273" width="266" height="131"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Light Mode is ON" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rms-b0-Fzo">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="47"/>
+                                        <color key="backgroundColor" red="0.98854296139999998" green="0.49283598410000001" blue="0.3191011997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="DMp-Xk-bXE"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="266" id="s91-se-vwY"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="highlightedColor" red="0.98854296139999998" green="0.49283598410000001" blue="0.3191011997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" red="0.98854296139999998" green="0.49283598410000001" blue="0.3191011997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxG-Y2-5De">
+                                        <rect key="frame" x="0.0" y="75" width="266" height="56"/>
+                                        <color key="backgroundColor" red="0.52645827779999999" green="0.31095575209999998" blue="0.29279771970000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="pD1-ag-HRi"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="266" id="rV6-aT-ab9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HinaMincho-Regular" family="Hina Mincho" pointSize="25"/>
+                                        <state key="normal" title="Open Settings"/>
+                                        <connections>
+                                            <action selector="openSettingsTapped:" destination="dRM-dd-tjj" eventType="touchUpInside" id="4J1-yQ-qlQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EDh-pW-1ik"/>
+                        <color key="backgroundColor" red="0.98854296139999998" green="0.49283598410000001" blue="0.3191011997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mDY-h0-fuz" firstAttribute="centerY" secondItem="Rlb-DL-uao" secondAttribute="centerY" constant="-82.5" id="0bm-dG-vvb"/>
+                            <constraint firstItem="EDh-pW-1ik" firstAttribute="trailing" secondItem="34d-iB-ZSg" secondAttribute="trailing" constant="69" id="ipF-N7-L8L"/>
+                            <constraint firstItem="34d-iB-ZSg" firstAttribute="top" secondItem="EDh-pW-1ik" secondAttribute="top" constant="50" id="ssc-Fb-uCr"/>
+                            <constraint firstItem="mDY-h0-fuz" firstAttribute="centerX" secondItem="Rlb-DL-uao" secondAttribute="centerX" id="uxM-7t-iJH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="34d-iB-ZSg" id="A0Z-cp-5LA"/>
+                        <outlet property="closedButton" destination="34d-iB-ZSg" id="JRl-ga-A0A"/>
+                        <outlet property="openSettingsButton" destination="QxG-Y2-5De" id="vMg-sH-Yz5"/>
+                        <outlet property="textLabel" destination="rms-b0-Fzo" id="8gq-Xy-N8p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="foJ-mv-4Yv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1857.9710144927537" y="-642.1875"/>
+        </scene>
         <!--Elon Musk News-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -105,15 +180,25 @@
                                 <action selector="infoBarItem:" destination="BYZ-38-t0r" id="fAx-Kq-vwh"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="paperplane.circle.fill" catalog="system" id="B82-o1-OcY">
-                            <color key="tintColor" red="0.98854296139999998" green="0.49283598410000001" blue="0.3191011997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="getDataTapped:" destination="BYZ-38-t0r" id="z1N-GN-baP"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="paperplane.circle.fill" catalog="system" id="B82-o1-OcY">
+                                <color key="tintColor" red="0.98854296139999998" green="0.49283598410000001" blue="0.3191011997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="getDataTapped:" destination="BYZ-38-t0r" id="z1N-GN-baP"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="moon.circle.fill" catalog="system" id="gHk-f0-jnh">
+                                <color key="tintColor" red="0.98854296139999998" green="0.49283598410000001" blue="0.3191011997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="moonBarButtonItemTapped:" destination="BYZ-38-t0r" id="3Te-Lj-Mmd"/>
+                                    <segue destination="dRM-dd-tjj" kind="presentation" id="Xk1-91-Bue"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="activityIndicatorView" destination="fed-xF-uUG" id="345-0U-8SQ"/>
+                        <outlet property="moonBarButtonItem" destination="gHk-f0-jnh" id="Vv9-ee-yPi"/>
                         <outlet property="tableView" destination="vCA-Te-ZWM" id="Ixw-XD-9z5"/>
                     </connections>
                 </viewController>
@@ -247,7 +332,7 @@
         <!--Detail View Controller-->
         <scene sceneID="qG5-bi-zky">
             <objects>
-                <viewController storyboardIdentifier="DetailViewController" id="vlT-Yo-AOE" customClass="DetailViewController" customModule="ElonMuskNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" hidesBottomBarWhenPushed="YES" id="vlT-Yo-AOE" customClass="DetailViewController" customModule="ElonMuskNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VUh-yp-Faz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -360,7 +445,7 @@
         <!--Web View Controller-->
         <scene sceneID="tMc-AX-FS7">
             <objects>
-                <viewController storyboardIdentifier="WebViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ArA-gL-kTS" customClass="WebViewController" customModule="ElonMuskNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" hidesBottomBarWhenPushed="YES" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ArA-gL-kTS" customClass="WebViewController" customModule="ElonMuskNewsFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UaD-QL-Nrg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -415,6 +500,7 @@
     <color key="tintColor" red="0.98854296139999998" green="0.49283598410000001" blue="0.3191011997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
     <resources>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="moon.circle.fill" catalog="system" width="128" height="121"/>
         <image name="newspaper" catalog="system" width="128" height="108"/>
         <image name="paperplane.circle.fill" catalog="system" width="128" height="121"/>
         <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
