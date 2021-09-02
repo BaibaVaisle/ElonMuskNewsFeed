@@ -16,7 +16,7 @@ class ModeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setLabelText()
-      //  closedButton.layer.cornerRadius = 6
+        closedButton.layer.cornerRadius = 6
         textLabel.layer.cornerRadius = 6
         openSettingsButton.layer.cornerRadius = 6
     }
